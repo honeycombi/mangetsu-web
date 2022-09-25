@@ -78,7 +78,8 @@ ul ol {
     ),
     url('https://media.istockphoto.com/photos/blur-orange-texture-background-picture-id1180453857?k=20&m=1180453857&s=612x612&w=0&h=mxIAMH7k1Bw-cjdTaCwt4OHMz7QJ_eJU-kwsfg2wQ4g=');
   background-size: cover;
-  height: 100vh;
+  background-repeat: repeat-y;
+  height: 100%;
   z-index: -500;
 }
 

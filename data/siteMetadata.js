@@ -8,7 +8,7 @@ const siteMetadata = {
   siteUrl: 'https://teammangestu.vercel.app',
   siteRepo: 'https://github.com/Mangetsu-Team',
   siteLogo: '/static/images/logo.png',
-  image: '/static/images/avatar.png',
+  image: '/static/images/logo.png',
   socialBanner: '/static/images/twitter-card.png',
   // email: 'address@yoursite.com',
   // github: 'https://github.com',

@@ -1,19 +1,15 @@
-// @ts-check
-/* eslint-disable @typescript-eslint/no-var-requires */
-
 const defaultTheme = require('tailwindcss/defaultTheme')
 const colors = require('tailwindcss/colors')
 
-/** @type {import("tailwindcss/tailwind-config").TailwindConfig } */
 module.exports = {
   experimental: {
     optimizeUniversalDefaults: true,
   },
   content: [
-    './pages/**/*.tsx',
-    './components/**/*.tsx',
-    './layouts/**/*.tsx',
-    './lib/**/*.ts',
+    './pages/**/*.js',
+    './components/**/*.js',
+    './layouts/**/*.js',
+    './lib/**/*.js',
     './data/**/*.mdx',
   ],
   darkMode: 'class',
@@ -32,9 +28,8 @@ module.exports = {
         sans: ['InterVariable', ...defaultTheme.fontFamily.sans],
       },
       colors: {
-        primary: colors.orange,
-        //@ts-ignore
-        gray: colors.neutral, // TODO: Remove ts-ignore after tw types gets updated to v3
+        primary: colors.teal,
+        gray: colors.neutral,
       },
       typography: (theme) => ({
         DEFAULT: {
