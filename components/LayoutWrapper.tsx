@@ -7,6 +7,7 @@ import Footer from './Footer'
 import MobileNav from './MobileNav'
 import ThemeSwitch from './ThemeSwitch'
 import { ReactNode } from 'react'
+import Image from 'next/image'
 
 interface Props {
   children: ReactNode
@@ -21,10 +22,12 @@ const LayoutWrapper = ({ children }: Props) => {
             <Link href="/" aria-label={siteMetadata.headerTitle}>
               <div className="flex items-center justify-between">
                 <div className="mr-3">
-                  <Logo />
+                  <div className="pt-4">
+                    <Image src="/static/images/logo.png" width="40" height="40" />
+                  </div>
                 </div>
                 {typeof siteMetadata.headerTitle === 'string' ? (
-                  <div className="hidden h-6 text-2xl font-semibold sm:block">
+                  <div className="hidden h-6 text-2xl font-semibold text-orange-600 dark:text-orange-400 sm:block">
                     {siteMetadata.headerTitle}
                   </div>
                 ) : (

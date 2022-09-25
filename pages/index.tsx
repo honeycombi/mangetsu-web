@@ -22,7 +22,15 @@ export default function Home() {
           <br />
           <div className="text-3xl">
             <br />
+
             <div className="mt-[-10px]">
+              <button className="mx-4 rounded border border-white bg-transparent py-2 px-4 hover:border-transparent hover:bg-orange-600">
+                <a href="https://github.com/Mangetsu-Team/Mangetsu">
+                  <div className="inline cursor-pointer text-orange-300">See the code</div>
+                </a>
+              </button>
+
+              {/* <div className="mt-[-10px]">
               <button className="mx-4 rounded border border-white bg-transparent py-2 px-4 hover:border-transparent hover:bg-orange-600">
                 <a href="/swap">
                   <div className="inline cursor-pointer text-orange-300">Swap</div>
@@ -34,11 +42,12 @@ export default function Home() {
                   <div className="inline cursor-pointer text-orange-300">Blog</div>
                 </a>
               </button>
+            </div> */}
             </div>
           </div>
         </div>
       </div>
-      <p>asdfjbasfbdjh</p>
+      <p>asdasdkjn</p>
     </div>
   )
 }
