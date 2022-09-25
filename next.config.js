@@ -53,8 +53,6 @@ const securityHeaders = [
 ]
 
 module.exports = withBundleAnalyzer({
-  target: serverless,
-  experimental: { nftTracing: true },
   reactStrictMode: true,
   pageExtensions: ['js', 'jsx', 'md', 'mdx'],
   eslint: {
@@ -86,3 +84,8 @@ module.exports = withBundleAnalyzer({
     return config
   },
 })
+
+module.exports = {
+  target: 'serverless',
+  experimental: { nftTracing: true },
+}
