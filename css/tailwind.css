@@ -81,6 +81,7 @@ ul ol {
   background-repeat: repeat-y;
   height: 100%;
   z-index: -500;
+  height: max-content;
 }
 
 .title {
