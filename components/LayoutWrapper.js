@@ -17,7 +17,7 @@ const LayoutWrapper = ({ children }) => {
               <div className="flex items-center justify-between">
                 <div className="mr-3">
                   <div className="pt-4">
-                    <Image src="/static/images/logo.png" width="40" height="40" />
+                    <Image src="/static/images/logo.png" alt="logo" width="40" height="40" />
                   </div>
                 </div>
                 {typeof siteMetadata.headerTitle === 'string' ? (

@@ -11,7 +11,7 @@ export default function Home() {
       <div className="flex h-screen text-center text-gray-200">
         <div className="m-auto">
           <div className="pb-[-10px]">
-            <Image src="/static/images/logo.png" width="200" height="200" />
+            <Image src="/static/images/logo.png" alt="logo" width="200" height="200" />
           </div>
 
           <h1 className="text-8xl">
