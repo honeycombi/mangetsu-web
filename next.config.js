@@ -85,3 +85,7 @@ module.exports = withBundleAnalyzer({
     return config
   },
 })
+
+experimental: {
+  nftTracing: true
+}
