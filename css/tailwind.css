@@ -2,99 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
+.task-list-item::before {
+  @apply hidden;
+}
+
+.task-list-item {
+  @apply list-none;
+}
+
 .footnotes {
-  @apply mt-12 border-t border-gray-200 pt-8 dark:border-gray-700;
+  @apply pt-8 mt-12 border-t border-gray-200 dark:border-gray-700;
 }
 
 .csl-entry {
   @apply my-5;
 }
 
+/* https://stackoverflow.com/questions/61083813/how-to-avoid-internal-autofill-selected-style-to-be-applied */
 input:-webkit-autofill,
 input:-webkit-autofill:focus {
   transition: background-color 600000s 0s, color 600000s 0s;
-}
-
-html {
-  scroll-behavior: smooth;
-  font-family: ui-serif, Georgia, Cambria, 'Times New Roman', Times, serif;
-}
-
-a {
-  color: #3b82f6;
-}
-
-.katex {
-  font-size: 1em !important;
-}
-
-.prose :where(p):not(:where([class~='not-prose'] *)) {
-  margin-top: 0.8em;
-  margin-bottom: 0.8em;
-}
-
-ul {
-  list-style-type: disc;
-  list-style-position: outside;
-  margin-left: 30px;
-}
-ol {
-  list-style-type: decimal;
-  list-style-position: outside;
-  margin-left: 30px;
-}
-ul ul,
-ol ul {
-  list-style-type: circle;
-  list-style-position: outside;
-  margin-left: 15px;
-}
-ol ol,
-ul ol {
-  list-style-type: lower-latin;
-  margin-left: 15px;
-  list-style-position: outside;
-}
-
-.home {
-  background-image: linear-gradient(
-      to right,
-      rgba(0, 0, 0, 0.45),
-      rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.45)
-    ),
-    url('https://media.istockphoto.com/photos/stars-at-night-sky-picture-id498478219?b=1&k=20&m=498478219&s=170667a&w=0&h=60uBDjVUQSF8ZJjbUN3QWanv08QZLiRgAHhbSZ-RNRc=');
-
-  background-size: cover;
-  height: 100vh;
-}
-
-.layoutbg {
-  background-image: linear-gradient(
-      to right,
-      rgba(255, 255, 255, 0.6),
-      rgba(255, 255, 255, 0.6),
-      rgba(255, 255, 255, 0.6)
-    ),
-    url('https://media.istockphoto.com/photos/blur-orange-texture-background-picture-id1180453857?k=20&m=1180453857&s=612x612&w=0&h=mxIAMH7k1Bw-cjdTaCwt4OHMz7QJ_eJU-kwsfg2wQ4g=');
-  background-size: cover;
-  background-repeat: repeat-y;
-  height: 100%;
-  z-index: -500;
-}
-
-.title {
-  background: #fd9346;
-  background: linear-gradient(to right, #fd7f2c 0%, #fdb777 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.swapglassmorphism {
-  background: rgba(255, 255, 255, 0.25);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
-  border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
 }

@@ -81,11 +81,7 @@ module.exports = withBundleAnalyzer({
         'react-dom': 'preact/compat',
       })
     }
+
     return config
   },
 })
-
-module.exports = {
-  target: 'serverless',
-  experimental: { nftTracing: true },
-}
