@@ -1,1 +1,1 @@
-Mangestu Website, build by Gary Hu using the [tailwind nextjs starter blog](https://github.com/timlrx/tailwind-nextjs-starter-blog).
+Mangestu Website, build by Gary Hu using the [tailwind nextjs starter blog](https://github.com/timlrx/tailwind-nextjs-starter-blog). As of October 2022, this project is in it's early stages, is still under construction, and has a few bugs.
